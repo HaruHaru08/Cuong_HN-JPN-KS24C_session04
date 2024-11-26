@@ -15,7 +15,7 @@ int main(){
 			int year;
 			printf("nhap nam vao de biet chinh xac so ngay cua thang: ");
 			scanf("%d",&year);
-			if((year%400 == 0) && (year%4 == 0 && year%10 != 0)){
+			if((year%400 == 0) || (year%4 == 0 && year%100 != 0)){
 					printf("Thang nay co 29 ngay\n");
 			}else{
 				printf("Thang nay co 28 ngay\n");
